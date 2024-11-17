@@ -1,0 +1,247 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Proyecto Shopping cart app</title>
+    <!-- Normalizar estilos -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Figtree&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Icon fonts -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="header-section container">
+        <a href="#"><img src="images/logo.png" alt="" /></a>
+
+        <ul class="menu">
+          <li><a class="active" href="index.html">Home</a></li>
+          <li><a href="#">Muebles interiores</a></li>
+          <li><a href="#">Muebles exteriores</a></li>
+          <li><a href="#">Espacios de trabajo</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+
+        <div>
+          <a href="#" class="user"
+            ><i class="fa-solid fa-user"></i> Mi cuenta</a
+          >
+          <i id="cart-icon" class="fa-solid fa-cart-shopping cart"></i>
+          <p class="product-amount">0</p>
+        </div>
+
+        <div class="cart-products" id="products-id">
+          <p class="close-btn"><i class="fa-solid fa-circle-xmark"></i></p>
+          <h3>Mi carrito</h3>
+          <div class="cart-items"></div>
+          <h2>SubTotal: $<strong class="price-total">0</strong></h2>
+          <a href="#" class="vercarrito">Ver carrito</a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <article>
+        <section>
+          <div id="seccionPrimera" class="container">
+            <h1>
+              Conoce la nueva colección de<br />
+              muebles para toda ocasión
+            </h1>
+            <a href="#" class="info">Más información</a>
+          </div>
+        </section>
+
+        <section>
+          <div id="seccionDos" class="container">
+            <h2><span>Productos</span> <br />Destacados</h2>
+            <div class="products">
+              <div class="carts">
+                <div>
+                  <img src="images/products/1.jpg" alt="" />
+                </div>
+                <p class="title">Brown Wooden Table With Chairs</p>
+                <p>$<span>345</span></p>
+                <a href="#" data-id="1" class="btn-add-cart"
+                  >Agregar al carrito</a
+                >
+              </div>
+
+              <div class="carts">
+                <div>
+                  <img src="images/products/2.jpg" alt="" />
+                </div>
+                <p class="title">White Leather Fainting Couch</p>
+                <p>$<span>450</span></p>
+                <a href="#" class="btn-add-cart" data-id="2"
+                  >Agregar al carrito</a
+                >
+              </div>
+
+              <div class="carts">
+                <div>
+                  <img src="./images/products/3.jpg" alt="" />
+                </div>
+                <p class="title">Orange Leather Sofa</p>
+                <p>$<span>450.50</span></p>
+                <a href="#" data-id="3" class="btn-add-cart"
+                  >Agregar al carrito</a
+                >
+              </div>
+
+              <div class="carts">
+                <div>
+                  <img src="./images/products/4.jpg" alt="" />
+                </div>
+                <p class="title">Beige Sofa</p>
+                <p>$<span>200</span></p>
+                <a href="#" data-id="4" class="btn-add-cart"
+                  >Agregar al carrito</a
+                >
+              </div>
+
+              <div class="carts">
+                <div>
+                  <img src="./images/products/5.jpg" alt="" />
+                </div>
+                <p class="title">Gray Office Rolling Chairk</p>
+                <p>$<span>345</span></p>
+                <a href="#" data-id="5" class="btn-add-cart"
+                  >Agregar al carrito</a
+                >
+              </div>
+
+              <div class="carts">
+                <div>
+                  <img src="./images/products/6.jpg" alt="" />
+                </div>
+                <p class="title">White Bed and White Accent Table</p>
+                <p>$<span>45</span></p>
+                <a href="#" data-id="6" class="btn-add-cart"
+                  >Agregar al carrito</a
+                >
+              </div>
+
+              <div class="carts">
+                <div>
+                  <img src="./images/products/7.jpg" alt="" />
+                </div>
+                <p class="title">Gray Fabric Sofa</p>
+                <p>$<span>239.99</span></p>
+                <a href="#" data-id="7" class="btn-add-cart"
+                  >Agregar al carrito</a
+                >
+              </div>
+
+              <div class="carts">
+                <div>
+                  <img src="./images/products/8.jpg" alt="" />
+                </div>
+                <p class="title">Kitchen Island and Barstools</p>
+                <p>$<span>550</span></p>
+                <a href="#" data-id="8" class="btn-add-cart"
+                  >Agregar al carrito</a
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div id="seccionTres" class="container">
+            <h2><span>Explora</span> <br />otras novedades</h2>
+            <div>
+              <a href="#"
+                ><img src="images/pexels-alex-qian-2343468.jpg" alt=""
+              /></a>
+
+              <a href="#"
+                ><img src="images/pexels-almira-15915807.jpg" alt=""
+              /></a>
+              <a href="#"
+                ><img src="images/pexels-charlotte-may-5824901.jpg" alt=""
+              /></a>
+              <a href="#"
+                ><img src="images/pexels-evg-kowalievska-1366879.jpg" alt=""
+              /></a>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div id="seccionCuatro" class="container">
+            <div>
+              <i class="fa-solid fa-truck-fast"></i>
+              <h2>Envío gratis a todo el país</h2>
+              <p>
+                Lorem ipsum sit amet consectetur, adipisicing elit. Mollitia
+                vitae ducimus, necessitatibus maiores
+              </p>
+              <a href="#">Leer más</a>
+            </div>
+
+            <div>
+              <i class="fa-solid fa-tag"></i>
+              <h2>Garantía de precio</h2>
+              <p>
+                Lorem ipsum sit amet consectetur, adipisicing elit. Mollitia
+                vitae ducimus, necessitatibus maiores
+              </p>
+              <a href="#">Leer más</a>
+            </div>
+
+            <div>
+              <i class="fa-solid fa-medal"></i>
+              <h2>Un servicio galardonado</h2>
+              <p>
+                Lorem ipsum sit amet consectetur, adipisicing elit. Mollitia
+                vitae ducimus, necessitatibus maiores
+              </p>
+              <a href="#">Leer más</a>
+            </div>
+          </div>
+        </section>
+      </article>
+    </main>
+    <footer>
+      <div id="piedDePagina" class="container">
+        <div>
+          <ul>
+            <li><a href="#">Acerca de</a></li>
+            <li><a href="#">Socios</a></li>
+            <li><a href="#">Trabaja con nosotros</a></li>
+            <li><a href="#">Contacto</a></li>
+          </ul>
+        </div>
+        <div>
+          <ul>
+            <li><a href="condiciones.html">Términos y condiciones</a></li>
+            <li><a href="privacidad.html">Política de privacidad</a></li>
+          </ul>
+        </div>
+        <div>
+          <a href="index.html"><img src="images/logo.png" alt="Logotipo" /></a>
+          <div id="social">
+            <a href="#"><i class="fab fa-facebook-square"></i></a>
+            <a href="#"><i class="fab fa-twitter-square"></i></a>
+            <a href="#"><i class="fab fa-pinterest"></i></a>
+          </div>
+        </div>
+      </div>
+      <div id="copyright">© damaconcagua.com. Derechos reservados.</div>
+    </footer>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>
